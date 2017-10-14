@@ -1,0 +1,61 @@
+{
+  "entity": [
+    {
+      "ID": 1,
+      "name": "Hilton's",
+      "street": "Frankfurter Allee",
+      "houseno": 8,
+      "zipcode": 10247,
+      "city": "Berlin",
+      "coordinates": [
+        50,
+        50
+      ],
+      "phoneno": "030674539",
+      "friendliness": {
+        "parks": 3,
+        "vets": 1,
+        "petstores": 2,
+        "restaurants": 3
+      }
+    },
+    {
+      "ID": 2,
+      "name": "Hotel Big Mama",
+      "street": "Unter den Linden",
+      "houseno": 100,
+      "zipcode": 10677,
+      "city": "Berlin",
+      "coordinates": [
+        58,
+        69
+      ],
+      "phoneno": "0306889539",
+      "friendliness": {
+        "parks": 6,
+        "vets": 3,
+        "petstores": 2,
+        "restaurants": 10
+      }
+    },
+    {
+      "ID": 3,
+      "name": "Los Doggos",
+      "street": "DogRoad",
+      "houseno": 5,
+      "zipcode": 14537,
+      "city": "Berlin",
+      "coordinates": [
+        55,
+        49
+      ],
+      "phoneno": "030777779",
+      "friendliness": {
+        "parks": 15,
+        "vets": 5,
+        "petstores": 8,
+        "restaurants": 28
+      }
+    }
+  ]
+}
