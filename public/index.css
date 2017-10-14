@@ -1,7 +1,7 @@
 
 nav {
     display: flex;
-    height: 35px;
+    height: 40px;
     background-color:  #50e2d4;
     color: #ffffff;
 }
@@ -24,34 +24,38 @@ nav {
 }
 .search-page {
     width: 100%;
-    height: 1000px;
+    height: 90%;
     margin: 0 auto;
-    /* background: url("images/teddy-kelley-124043.jpg") no-repeat fixed center; */
-    background: lightcoral;
-}
-.search-page-img {
+    background: url(images/teddy-kelley-124043.jpg) no-repeat fixed center;
     opacity: 0.5;
     filter: alpha(opacity=50);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.search-page img {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    color: #000000;
 }
 .search-container-main {
     display: flex;
     justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 .search-container-div {
     width: 250px;
     height: 40px;
-    border: 1px #484848 solid;
     border-radius: 30px;
+    background-color: #ffffff;
 }
 .search-button-image {
     width: 30px;
 }
 .search-button {
     border-radius: 30px;
-    color: #50e2d4;
+    background-color: #50e2d4;
 
-}
-footer {
-    height: 50px;
-    background: lightpink;
 }
