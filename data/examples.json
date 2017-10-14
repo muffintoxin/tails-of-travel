@@ -3,15 +3,16 @@
     {
       "ID": 1,
       "name": "Hilton's",
-      "street": "Frankfurter Allee",
-      "houseno": 8,
-      "zipcode": 10247,
+      "street": "Mohrenstraße",
+      "houseno": 30,
+      "zipcode": 10117,
       "city": "Berlin",
+      "website": "http://www3.hilton.com",
+      "picture": "http://www3.hilton.com/resources/media/hi/BERHITW/en_US/img/shared/video_asset/main/HL_exterior01_746x420_FitToBoxSmallDimension_Center.jpg",
       "coordinates": [
-        50,
-        50
+        52.513566, 13.393038
       ],
-      "phoneno": "030674539",
+      "phoneno": "030 202300",
       "friendliness": {
         "parks": 3,
         "vets": 1,
@@ -22,15 +23,16 @@
     {
       "ID": 2,
       "name": "Hotel Big Mama",
-      "street": "Unter den Linden",
-      "houseno": 100,
-      "zipcode": 10677,
+      "street": "Koloniestraße",
+      "houseno": 24,
+      "zipcode": 13359,
       "city": "Berlin",
+      "website": "www.hotelbigmama.com",
+      "picture": "http://hotelbigmama.com/wp-content/uploads/2015/01/lobby09.jpg",
       "coordinates": [
-        58,
-        69
+        52.558626, 13.379304
       ],
-      "phoneno": "0306889539",
+      "phoneno": "030 48478787",
       "friendliness": {
         "parks": 6,
         "vets": 3,
@@ -45,16 +47,18 @@
       "houseno": 5,
       "zipcode": 14537,
       "city": "Berlin",
+      "website": "www.dog.com",
+      "picture": "http://www.poshpethotel.com/wp-content/uploads/2015/05/Presidential-Suite.jpg",
       "coordinates": [
         55,
         49
       ],
       "phoneno": "030777779",
       "friendliness": {
-        "parks": 15,
-        "vets": 5,
-        "petstores": 8,
-        "restaurants": 28
+        "parks": 2,
+        "vets": 0,
+        "petstores": 1,
+        "restaurants": 2
       }
     }
   ]
