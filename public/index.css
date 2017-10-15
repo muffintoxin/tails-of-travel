@@ -150,5 +150,72 @@ iframe {
 #sidebar {
     width: 35vw;
     height: 100vh;
-    background-color: grey;
+    background-color: #ffffff;
+}
+.sidebar-dropdown {
+    height: 8vh;
+    display: inline-block;
+    margin-top: 40px;
+}
+.sidebar-content {
+    height: 85vh;
+}
+.sidebar-dropdown-button {
+    background:  #ffffff url("images/arrow_down.svg") no-repeat;
+    background-position: 110% 14px;
+    opacity: .9;
+    padding-left: 31px;
+    border: none;
+    margin-right: 23px;
+
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+    font-size: 16px;
+}
+.sidebar-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.sidebar-dropdown-content div{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+.sidebar-dropdown-content div:hover {
+    background-color: #f1f1f1;
+}
+.sidebar-dropdown:hover .sidebar-dropdown-content {
+    display: block;
+}
+/*---------*/
+
+.sidebar-slider-button{
+    background:  #ffffff url("images/arrow_down.svg") no-repeat;
+    background-position: 114% 14px;
+    opacity: .9;
+    padding-left: 31px;
+    border: none;
+    margin-right: 23px;
+
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+    font-size: 16px;
+}
+.slide-container {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.sidebar-slider:hover .slide-container {
+    display: block;
+}
+.sidebar-slider {
+    display: inline-block
 }

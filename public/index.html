@@ -40,7 +40,26 @@
     </div>
   </div>
   <div id="search-results" class="search-results hidden">
-    <div id="sidebar"></div>
+    <div id="sidebar">
+      <div id="sidebar-dropdown" class="sidebar-dropdown"> 
+            <div class="sidebar-dropdown-button" id="sidebar-dropdown-button" >Sort by</div>
+            <div id="sidebar-dropdown-content" class="sidebar-dropdown-content">
+              <div>Dog parks</div>
+              <div>Pet Stores</div>
+              <div>Pet Hspitals</div>
+            </div>
+      </div>
+      <div class="sidebar-slider" class="sidebar-slider">
+          <div class="sidebar-slider-button" id="sidebar-slider-button" >Price</div>
+        <div id="slide-container" class="slide-container">
+            <span>0€</span>
+            <input type="range" min="1" max="100" value="0">
+            <span>1000€</span>
+       </div>
+      </div>
+      <div class="sidebar-content"></div>
+    </div>
+
     <iframe id="results-frame" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBAObxrVVzfw0d31yKx9d7JgPegJNkapr8&q=pet+friendly+hotel+berlin"
       allowfullscreen>
     </iframe>

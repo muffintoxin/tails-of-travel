@@ -1,27 +1,24 @@
 $(document).ready(function () {
     var apiKey = 'AIzaSyBAObxrVVzfw0d31yKx9d7JgPegJNkapr8';
     var apiKey2 = 'AIzaSyBB9dhmGS7775XKuS8PDCUWmBSQaQNTih8';
-    var baseUrl = 'https://www.google.com/maps/embed/v1/search?key=' + apiKey + '&q=pet+friendly+'
+    var baseUrl = 'https://www.google.com/maps/embed/v1/search?key=' + apiKey + '&center=52.514064,13.336389&zoom=13&q=pet+friendly+hotel+';
+   
 
-    function processJSON(json) {
-        // Do stuff here
-        console.log(json);
-    }
     $('#search-page').keyup(function(event){
         if(event.keyCode == 13){
             $('#search-button').click();
         }
     });
     $('#search-button').click(function (event) {
+        var city = $('#input-city').val();
         $('#search-results').removeClass('hidden')
         $('html, body').animate({
             scrollTop: $('#search-results').offset().top
         }, 500);
-        var city = $('#input-city').val();
-        var keyWord = $('#input-keyword').text() + '+';
+        var keyWord = $('#input-keyword').val() + '+';
         //var keyWord = $('#input-keyword').val() + '+';
         console.log(baseUrl + keyWord + city);
-        $('#results-frame').attr('src', baseUrl + city);
+        $('#results-frame').attr('src', baseUrl+city);
         var address = 'Berlin'
         /*$.ajax({
             type: "GET",
