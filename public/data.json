@@ -1,0 +1,67 @@
+{
+  "hotels": [
+    {
+      "name": "Sofitel Berlin Kurfürstendamm",
+      "position": [],
+      "address": "Augsburger Str. 41, 10789 Berlin, Germany",
+      "website": "http://www.sofitel.com/de/hotel-9387-sofitel-berlin-kurfurstendamm/index.shtml",
+      "price":122
+    },
+    {
+      "name": "25hours Hotel Bikini Berlin",
+      "position": [],
+      "address": "Budapester Str. 40, 10787 Berlin, Germany",
+      "website": "https://www.25hours-hotels.com/en/bikini/home/home.html",
+      "price":122
+    },
+    {
+      "name": "Das Stue",
+      "position": [],
+      "address": "Drakestraße 1, 10787 Berlin, Germany",
+      "website": "http://das-stue.com/",
+      "price":83
+    },
+    {
+      "name": "Steigenberger Hotel Am Kanzleramt, Berlin",
+      "address": "Ella-Trebe-Straße 5, 10557 Berlin, Germany",
+      "website": "https://www.steigenberger.com/en/hotels/all-hotels/germany/berlin/steigenberger-hotel-am-kanzleramt",
+      "price":136
+    },
+    {
+      "name": "Hotel Adlon Kempinski Berlin",
+      "address": "Unter den Linden 77, 10117 Berlin, Germany",
+      "website": "https://www.kempinski.com/de/berlin/hotel-adlon/",
+      "price":277
+    },
+    {
+      "name": "Grand Hyatt Berlin",
+      "address": "Marlene-Dietrich-Platz 2, 10785 Berlin, Germany",
+      "website": "https://berlin.grand.hyatt.com/de/hotel/home.html",
+      "price":186
+    },
+    {
+      "name": "Adina Apartment Hotel Berlin Mitte",
+      "address": "Platz vor dem Neuen Tor 6, 10115 Berlin, Germany",
+      "website": "adinahotels.com",
+      "price":99
+    },
+    {
+      "name": "Hotel NH Collection Berlin Friedrichstrasse",
+      "address": "Friedrichstraße 96, 10117 Berlin, Germany",
+      "website": "h-collection.com",
+      "price":95
+    },
+    {
+      "name": "Berlin Marriott Hotel",
+      "address": "Inge-Beisheim-Platz 1, 10785 Berlin, Germany",
+      "website": "marriott.com",
+      "price":138
+    },
+    {
+      "name": "Mövenpick Hotel Berlin",
+      "address": "Schöneberger Str. 3, 10963 Berlin, Germany",
+      "website": "movenpick.com",
+      "price":109
+    }
+  ]
+}
