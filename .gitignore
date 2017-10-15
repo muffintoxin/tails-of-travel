@@ -3,3 +3,5 @@ node_modules/
 package-lock.json
 ./public/.DS_Store
 public/.DS_Store
+public/.DS_Store
+public/images/.DS_Store
