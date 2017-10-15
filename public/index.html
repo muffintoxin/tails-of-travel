@@ -1,33 +1,50 @@
 <html>
-    <head>  
-    	<meta charset="UTF-8">
-      <script src="js/jquery-3.2.1.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-      <script type="text/javascript" src="js/index.js"></script>
-      <link rel="stylesheet" href="index.css" type="text/css"/>
-      <title>Pet Travel</title>
-    </head>
-    
+<head>
+  <meta charset="UTF-8">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <link rel="stylesheet" href="normalize.css" type="text/css" />
+  <link rel="stylesheet" href="index.css" type="text/css" />
+  <title>Tails of travel</title>
+</head>
+
 <body>
   <nav>
-    <div class="nav-logo-name"><h5>Pet Travel Friendly</h5></div>
+    <div class="nav-logo-name">
+      <h2>Tails Of Travel</h2>
+    </div>
     <div class="nav-user-pic">Something here</div>
-    <img src="images/slide-logo-2.png" class="nav-image" id="nav-image" alt="avatar"> 
+    <img src="images/slide-logo-2.png" class="nav-image" id="nav-image" alt="avatar">
   </nav>
   <div class="search-page" id="search-page">
     <div class="search-container-main" id="search-container">
-      <div class="search-container">Going To</div>
-      <div class="search-container"><input class="search-container-div" type="text"></div>
-      <div class="search-container">Looking for</div>
-      <div class="search-container"><input class="search-container-div" type="text"></div>
-      <button class="search-button" class="search-container" id="search-button">
-        <img src="images/arrow_right.png" class="search-button-image" alt="avatar"> 
-        GO!
-      </button>
+      <div class="search-container"></div>
+      <div class="search-container">
+        <input class="search-container-div search-field-1" id="input-city" type="text" placeholder="Going To...">
+      </div>
+      <div class="search-container"></div>
+      <div class="search-container">
+        <div id="search-dropdown" class="dropdown">
+          <input class="search-container-div search-field-2" id="input-keyword" type="text" placeholder="Looking for...">
+          <div id="search-dropdown-content" class="dropdown-content">
+            <div>Hotel</div>
+            <div>Restaurant</div>
+            <div>Service</div>
+          </div>
+        </div>
+      </div>
+      <div class="search-button search-container" id="search-button">
+        <div class="search-button-text">GO!</div>
+      </div>
     </div>
   </div>
+  <div id="search-results" class="search-results hidden">
+    <div id="sidebar"></div>
+    <iframe id="results-frame" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBAObxrVVzfw0d31yKx9d7JgPegJNkapr8&q=pet+friendly+hotel+berlin"
+      allowfullscreen>
+    </iframe>
   </div>
 </body>
+
 </html>
