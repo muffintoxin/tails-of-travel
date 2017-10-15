@@ -1,5 +1,15 @@
+* {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo-place {
+    margin-right:5px;
+    
+}
+
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
 }
 nav {
@@ -21,7 +31,13 @@ nav {
     display: flex; 
     align-items: center; 
     justify-content: space-between;
+    margin-right: 10px;
 }
+
+.nav-user-text{
+    margin-right: 10px;
+}
+
 .nav-image {
     margin-right: 0;
     border-radius: 50%;
