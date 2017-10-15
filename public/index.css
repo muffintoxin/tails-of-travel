@@ -27,15 +27,24 @@ nav {
     justify-content: space-between;
     margin: 0 auto;
 }
+
 .nav-user-pic{
     display: flex; 
     align-items: center; 
     justify-content: space-between;
     margin-right: 10px;
+    margin-left:200px;
 }
 
 .nav-user-text{
     margin-right: 10px;
+}
+
+.nav-tagline {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    margin-left: 10px;
 }
 
 .nav-image {
