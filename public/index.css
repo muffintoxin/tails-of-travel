@@ -19,6 +19,17 @@ table, th, td {
     font-weight:bold;
 }
 
+table td {
+    background-color: #f9f9f9 ;
+ }
+ table td:hover {
+    background-color: rgba(249, 249, 249, 0.151);
+ }
+ table tr td:nth-child(1){
+    font-weight:bold;
+    font-size: 13px;
+ }
+
 .logo-place {
     margin-right:5px;
     
@@ -197,6 +208,8 @@ iframe {
     height: 8vh;
     display: inline-block;
     margin-top: 40px;
+
+    margin-left: 99px;
 }
 .sidebar-content {
     height: 85vh;
