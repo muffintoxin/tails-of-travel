@@ -5,11 +5,7 @@ const app = express();
 app.use(express.static('./public'))
 
 app.get('/',function(req,res){
-  res.sendFile('index.html');
-});
-
-app.get('/visualization',function(req,res){
-  res.sendFile('/visualization.html');
+  res.sendFile('/index.html');
 });
 
 var server_port = process.env.YOUR_PORT || process.env.PORT || 3000;
