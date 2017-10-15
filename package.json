@@ -1,0 +1,28 @@
+{
+  "name": "tails-of-travel",
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.4.0",
+    "npm": "5.3.0"
+  },
+  "description": "Hack Like A Girl 2017",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adelyafatykhova/tails-of-travel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adelyafatykhova/tails-of-travel/issues"
+  },
+  "homepage": "https://github.com/adelyafatykhova/tails-of-travel#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

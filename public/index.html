@@ -1,0 +1,55 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <link rel="stylesheet" href="normalize.css" type="text/css" />
+  <link rel="stylesheet" href="index.css" type="text/css" />
+  <link rel="shortcut icon" href="ToTfavicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+  <script src="https://use.fontawesome.com/0909b2eafe.js"></script>
+  <title>Tails of Travel</title>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-tagline">Where will you travel with your pet?</div>
+    <div class="nav-logo-name">
+      <!-- logo placeholder -->
+      <i class="fa fa-circle logo-place" aria-hidden="true"></i>
+      <h2>Tails Of Travel</h2>
+    </div>
+    <div class="nav-user-pic"><div class="nav-user-text">Not Signed In </div><i class="fa fa-user-circle" aria-hidden="true" id="nav-image" alt="avatar"></i></div>
+  </nav>
+  <div class="search-page" id="search-page">
+    <div class="search-container-main" id="search-container" style="padding-top:500px">
+      <div class="search-container"></div>
+      <div class="search-container">
+        <input class="search-container-div search-field-1" id="input-city" type="text" placeholder="I'm going to...">
+      </div>
+      <div class="search-container"></div>
+      <div class="search-container">
+        <div id="search-dropdown" class="dropdown">
+          <input class="search-container-div search-field-2" id="input-keyword" type="text" placeholder="I want...">
+          <div id="search-dropdown-content" class="dropdown-content">
+            <div>a place to stay</div>
+            <div>a place to eat</div>
+            <div>to find a service</div>
+          </div>
+        </div>
+      </div>
+      <div class="search-button search-container" id="search-button">
+        <div class="search-button-text">GO!</div>
+      </div>
+    </div>
+  </div>
+  <div id="search-results" class="search-results hidden">
+    <div id="sidebar"></div>
+    <iframe id="results-frame" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBAObxrVVzfw0d31yKx9d7JgPegJNkapr8&q=pet+friendly+hotel+berlin"
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+
+</html>
