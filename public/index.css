@@ -1,5 +1,31 @@
+* {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.sidebar-inner {
+    display: flex;
+    margin-bottom:50px;
+    background-color: "white";
+}
+
+table, th, td {
+    border: 0px solid black;
+    padding: 20px;
+    background-color: white;
+ }
+
+ table tr td:nth-child(1){
+    font-weight:bold;
+}
+
+.logo-place {
+    margin-right:5px;
+    
+}
+
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
 }
 nav {
@@ -17,11 +43,26 @@ nav {
     justify-content: space-between;
     margin: 0 auto;
 }
+
 .nav-user-pic{
     display: flex; 
     align-items: center; 
     justify-content: space-between;
+    margin-right: 10px;
+    margin-left:200px;
 }
+
+.nav-user-text{
+    margin-right: 10px;
+}
+
+.nav-tagline {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
 .nav-image {
     margin-right: 0;
     border-radius: 50%;
@@ -35,7 +76,7 @@ nav {
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
-    background: url(images/dog1.jpg) no-repeat fixed center;
+    background: url(images/dog2.png) no-repeat fixed center;
     background-size: cover;
     display: flex;
     align-items: center;

@@ -3,34 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- <script type="text/javascript" src="js/d3.min.js"></script> -->
   <script type="text/javascript" src="js/index.js"></script>
   <link rel="stylesheet" href="normalize.css" type="text/css" />
   <link rel="stylesheet" href="index.css" type="text/css" />
-  <title>Tails of travel</title>
+  <link rel="shortcut icon" href="ToTfavicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+  <script src="https://use.fontawesome.com/0909b2eafe.js"></script>
+  <title>Tails of Travel</title>
 </head>
 
 <body>
   <nav>
+    <div class="nav-tagline">Where will you travel with your pet?</div>
     <div class="nav-logo-name">
+      <!-- logo placeholder -->
+      <i class="fa fa-circle logo-place" aria-hidden="true"></i>
       <h2>Tails Of Travel</h2>
     </div>
-    <div class="nav-user-pic">Something here</div>
-    <img src="images/slide-logo-2.png" class="nav-image" id="nav-image" alt="avatar">
+    <div class="nav-user-pic">
+      <div class="nav-user-text">Not Signed In </div><i class="fa fa-user-circle" aria-hidden="true" id="nav-image" alt="avatar"></i></div>
   </nav>
   <div class="search-page" id="search-page">
-    <div class="search-container-main" id="search-container">
+    <div class="search-container-main" id="search-container" style="padding-top:500px">
       <div class="search-container"></div>
       <div class="search-container">
-        <input class="search-container-div search-field-1" id="input-city" type="text" placeholder="Going To...">
+        <input class="search-container-div search-field-1" id="input-city" type="text" placeholder="I'm going to...">
       </div>
       <div class="search-container"></div>
       <div class="search-container">
         <div id="search-dropdown" class="dropdown">
-          <input class="search-container-div search-field-2" id="input-keyword" type="text" placeholder="Looking for...">
+          <input class="search-container-div search-field-2" id="input-keyword" type="text" placeholder="I want...">
           <div id="search-dropdown-content" class="dropdown-content">
-            <div>Hotel</div>
-            <div>Restaurant</div>
-            <div>Service</div>
+            <div>a place to stay</div>
+            <div>a place to eat</div>
+            <div>to find a service</div>
           </div>
         </div>
       </div>
@@ -56,14 +63,95 @@
             <input type="range" min="1" max="100" value="0">
             <span>1000€</span>
        </div>
-      </div>
-      <div class="sidebar-content"></div>
+     </div>
+     <div id="sidebar-inner" class="sidebar-content"></div>
     </div>
 
     <iframe id="results-frame" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBAObxrVVzfw0d31yKx9d7JgPegJNkapr8&q=pet+friendly+hotel+berlin"
       allowfullscreen>
     </iframe>
   </div>
+  <script type="text/javascript">
+    let data = [
+    {
+      "name": "Sofitel Berlin Kurfürstendamm",
+      "position": [],
+      "address": "Augsburger Str. 41, 10789 Berlin, Germany",
+      "website": "http://www.sofitel.com/de/hotel-9387-sofitel-berlin-kurfurstendamm/index.shtml",
+      "price":122
+    },
+    {
+      "name": "25hours Hotel Bikini Berlin",
+      "position": [],
+      "address": "Budapester Str. 40, 10787 Berlin, Germany",
+      "website": "https://www.25hours-hotels.com/en/bikini/home/home.html",
+      "price":122
+    },
+    {
+      "name": "Das Stue",
+      "position": [],
+      "address": "Drakestraße 1, 10787 Berlin, Germany",
+      "website": "http://das-stue.com/",
+      "price":83
+    },
+    {
+      "name": "Steigenberger Hotel Am Kanzleramt, Berlin",
+      "address": "Ella-Trebe-Straße 5, 10557 Berlin, Germany",
+      "website": "https://www.steigenberger.com/en/hotels/all-hotels/germany/berlin/steigenberger-hotel-am-kanzleramt",
+      "price":136
+    },
+    {
+      "name": "Hotel Adlon Kempinski Berlin",
+      "address": "Unter den Linden 77, 10117 Berlin, Germany",
+      "website": "https://www.kempinski.com/de/berlin/hotel-adlon/",
+      "price":277
+    },
+    {
+      "name": "Grand Hyatt Berlin",
+      "address": "Marlene-Dietrich-Platz 2, 10785 Berlin, Germany",
+      "website": "https://berlin.grand.hyatt.com/de/hotel/home.html",
+      "price":186
+    },
+    {
+      "name": "Adina Apartment Hotel Berlin Mitte",
+      "address": "Platz vor dem Neuen Tor 6, 10115 Berlin, Germany",
+      "website": "adinahotels.com",
+      "price":99
+    },
+    {
+      "name": "Hotel NH Collection Berlin Friedrichstrasse",
+      "address": "Friedrichstraße 96, 10117 Berlin, Germany",
+      "website": "h-collection.com",
+      "price":95
+    },
+    {
+      "name": "Berlin Marriott Hotel",
+      "address": "Inge-Beisheim-Platz 1, 10785 Berlin, Germany",
+      "website": "marriott.com",
+      "price":138
+    },
+    {
+      "name": "Mövenpick Hotel Berlin",
+      "address": "Schöneberger Str. 3, 10963 Berlin, Germany",
+      "website": "movenpick.com",
+      "price":109
+    }
+  ];
+    
+    $('#sidebar-inner').append("<br><br><br><br><br>");
+
+    $('#sidebar-inner').append("<table class='results-table' id='results-table'>");
+    var table = document.getElementById("results-table");
+    for (let item of data) {
+      row = table.insertRow(-1);
+      for (let key in item) {
+          var cell = row.insertCell(-1);
+          cell.innerHTML = item[key];
+    }
+}
+
+
+  </script>
 </body>
 
 </html>
