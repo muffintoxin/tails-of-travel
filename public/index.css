@@ -3,6 +3,22 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.sidebar-inner {
+    display: flex;
+    margin-bottom:50px;
+    background-color: "white";
+}
+
+table, th, td {
+    border: 0px solid black;
+    padding: 20px;
+    background-color: white;
+ }
+
+ table tr td:nth-child(1){
+    font-weight:bold;
+}
+
 .logo-place {
     margin-right:5px;
     
