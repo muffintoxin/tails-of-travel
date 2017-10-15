@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/adelyafatykhova/tails-of-travel#readme",
   "dependencies": {
+    "d3": "^4.11.0",
     "express": "^4.16.2"
   }
 }

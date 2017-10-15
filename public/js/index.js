@@ -2,6 +2,7 @@ $(document).ready(function () {
     var apiKey = 'AIzaSyBAObxrVVzfw0d31yKx9d7JgPegJNkapr8';
     var apiKey2 = 'AIzaSyBB9dhmGS7775XKuS8PDCUWmBSQaQNTih8';
     var baseUrl = 'https://www.google.com/maps/embed/v1/search?key=' + apiKey + '&q=pet+friendly+'
+    // var d3 = require('d3')
 
     function processJSON(json) {
         // Do stuff here
